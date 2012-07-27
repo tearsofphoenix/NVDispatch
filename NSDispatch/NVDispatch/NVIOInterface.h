@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NVDispatch.h"
+#import "NVObject.h"
 
 @class NVQueue;
 @class NVData;
@@ -21,7 +21,7 @@ enum
 
 typedef NSUInteger NVIOType;
 
-@interface NVIOInterface : NSObject
+@interface NVIOInterface : NVObject
 
 
 - (id)initWithType: (NVIOType)type

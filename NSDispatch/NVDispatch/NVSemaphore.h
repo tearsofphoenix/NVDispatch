@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NVSemaphore : NSObject
+#import "NVObject.h"
+
+@interface NVSemaphore : NVObject
 
 - (id)initWithCount: (NSInteger)count;
 

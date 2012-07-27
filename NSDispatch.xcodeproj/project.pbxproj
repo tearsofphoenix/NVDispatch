@@ -7,38 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E12C1CA215BFED2D00F6F524 /* NVGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C1CA115BFED2D00F6F524 /* NVGroup.m */; };
-		E12C1CA515BFEF0400F6F524 /* NVDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C1CA415BFEF0400F6F524 /* NVDispatch.m */; };
-		E12C1CA815BFEF9C00F6F524 /* NVInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C1CA715BFEF9C00F6F524 /* NVInternal.m */; };
-		E12C1CAB15BFF21800F6F524 /* NVSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C1CAA15BFF21800F6F524 /* NVSemaphore.m */; };
-		E12C1CAE15BFF35A00F6F524 /* NVSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C1CAD15BFF35A00F6F524 /* NVSource.m */; };
-		E1333DC815C036030040B624 /* NVData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1333DC715C036030040B624 /* NVData.m */; };
-		E13340FB15C03F870040B624 /* NVIOInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E13340FA15C03F870040B624 /* NVIOInterface.m */; };
 		E18F904D15BFC216004C44C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F904C15BFC216004C44C4 /* UIKit.framework */; };
 		E18F904F15BFC216004C44C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F904E15BFC216004C44C4 /* Foundation.framework */; };
 		E18F905115BFC216004C44C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F905015BFC216004C44C4 /* CoreGraphics.framework */; };
 		E18F905715BFC216004C44C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E18F905515BFC216004C44C4 /* InfoPlist.strings */; };
 		E18F905915BFC216004C44C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F905815BFC216004C44C4 /* main.m */; };
 		E18F905D15BFC216004C44C4 /* NSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F905C15BFC216004C44C4 /* NSAppDelegate.m */; };
-		E18F906515BFC2B3004C44C4 /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F906415BFC2B3004C44C4 /* NVObject.m */; };
-		E18F906815BFC30A004C44C4 /* NVQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F906715BFC30A004C44C4 /* NVQueue.m */; };
+		E1BB68D215C23ADF00EE1DBC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E9322F15C237CC003E9E62 /* SenTestingKit.framework */; };
+		E1BB68D315C23ADF00EE1DBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F904C15BFC216004C44C4 /* UIKit.framework */; };
+		E1BB68D415C23ADF00EE1DBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F904E15BFC216004C44C4 /* Foundation.framework */; };
+		E1BB68DA15C23ADF00EE1DBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1BB68D815C23ADF00EE1DBC /* InfoPlist.strings */; };
+		E1BB68DD15C23ADF00EE1DBC /* NVDispatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB68DC15C23ADF00EE1DBC /* NVDispatchTest.m */; };
+		E1BB68F215C25E3C00EE1DBC /* NVData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321315C23773003E9E62 /* NVData.m */; };
+		E1BB68F315C25E3C00EE1DBC /* NVGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321715C23773003E9E62 /* NVGroup.m */; };
+		E1BB68F415C25E3C00EE1DBC /* NVInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321915C23773003E9E62 /* NVInternal.m */; };
+		E1BB68F515C25E3C00EE1DBC /* NVIOInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321B15C23773003E9E62 /* NVIOInterface.m */; };
+		E1BB68F615C25E3C00EE1DBC /* NVQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321F15C23773003E9E62 /* NVQueue.m */; };
+		E1BB68F715C25E3C00EE1DBC /* NVSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9322115C23773003E9E62 /* NVSemaphore.m */; };
+		E1BB68F815C25E3C00EE1DBC /* NVSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9322315C23773003E9E62 /* NVSource.m */; };
+		E1BB68F915C25E3C00EE1DBC /* NSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F905C15BFC216004C44C4 /* NSAppDelegate.m */; };
+		E1BB68FD15C2641A00EE1DBC /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB68FC15C2641A00EE1DBC /* NVObject.m */; };
+		E1BB68FE15C26EB500EE1DBC /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB68FC15C2641A00EE1DBC /* NVObject.m */; };
+		E1BB690B15C27AE100EE1DBC /* NVTimerSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */; };
+		E1BB690C15C27AE100EE1DBC /* NVTimerSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */; };
+		E1BB690F15C27B4600EE1DBC /* NVFileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690E15C27B4600EE1DBC /* NVFileSource.m */; };
+		E1BB691015C27B4600EE1DBC /* NVFileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690E15C27B4600EE1DBC /* NVFileSource.m */; };
+		E1BB691315C27FBB00EE1DBC /* NVNodeSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691215C27FBA00EE1DBC /* NVNodeSource.m */; };
+		E1BB691415C27FBB00EE1DBC /* NVNodeSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691215C27FBA00EE1DBC /* NVNodeSource.m */; };
+		E1BB691715C2822100EE1DBC /* NVMachSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691615C2822000EE1DBC /* NVMachSource.m */; };
+		E1BB691815C2822100EE1DBC /* NVMachSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691615C2822000EE1DBC /* NVMachSource.m */; };
+		E1BB691B15C282DC00EE1DBC /* NVProcessSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691A15C282DB00EE1DBC /* NVProcessSource.m */; };
+		E1BB691C15C282DC00EE1DBC /* NVProcessSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691A15C282DB00EE1DBC /* NVProcessSource.m */; };
+		E1BB691F15C282F000EE1DBC /* NVSignalSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691E15C282EF00EE1DBC /* NVSignalSource.m */; };
+		E1BB692015C282F000EE1DBC /* NVSignalSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691E15C282EF00EE1DBC /* NVSignalSource.m */; };
+		E1E9322515C23773003E9E62 /* NVData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321315C23773003E9E62 /* NVData.m */; };
+		E1E9322715C23773003E9E62 /* NVGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321715C23773003E9E62 /* NVGroup.m */; };
+		E1E9322815C23773003E9E62 /* NVInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321915C23773003E9E62 /* NVInternal.m */; };
+		E1E9322915C23773003E9E62 /* NVIOInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321B15C23773003E9E62 /* NVIOInterface.m */; };
+		E1E9322B15C23773003E9E62 /* NVQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9321F15C23773003E9E62 /* NVQueue.m */; };
+		E1E9322C15C23773003E9E62 /* NVSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9322115C23773003E9E62 /* NVSemaphore.m */; };
+		E1E9322D15C23773003E9E62 /* NVSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E9322315C23773003E9E62 /* NVSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E12C1CA015BFED2D00F6F524 /* NVGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGroup.h; sourceTree = "<group>"; };
-		E12C1CA115BFED2D00F6F524 /* NVGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVGroup.m; sourceTree = "<group>"; };
-		E12C1CA315BFEF0400F6F524 /* NVDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDispatch.h; sourceTree = "<group>"; };
-		E12C1CA415BFEF0400F6F524 /* NVDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVDispatch.m; sourceTree = "<group>"; };
-		E12C1CA615BFEF9C00F6F524 /* NVInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVInternal.h; sourceTree = "<group>"; };
-		E12C1CA715BFEF9C00F6F524 /* NVInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVInternal.m; sourceTree = "<group>"; };
-		E12C1CA915BFF21800F6F524 /* NVSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSemaphore.h; sourceTree = "<group>"; };
-		E12C1CAA15BFF21800F6F524 /* NVSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVSemaphore.m; sourceTree = "<group>"; };
-		E12C1CAC15BFF35A00F6F524 /* NVSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSource.h; sourceTree = "<group>"; };
-		E12C1CAD15BFF35A00F6F524 /* NVSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVSource.m; sourceTree = "<group>"; };
-		E1333DC615C036030040B624 /* NVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVData.h; sourceTree = "<group>"; };
-		E1333DC715C036030040B624 /* NVData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVData.m; sourceTree = "<group>"; };
-		E13340F915C03F860040B624 /* NVIOInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVIOInterface.h; sourceTree = "<group>"; };
-		E13340FA15C03F870040B624 /* NVIOInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVIOInterface.m; sourceTree = "<group>"; };
 		E18F904815BFC216004C44C4 /* NSDispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDispatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18F904C15BFC216004C44C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E18F904E15BFC216004C44C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,10 +60,43 @@
 		E18F905A15BFC216004C44C4 /* NSDispatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDispatch-Prefix.pch"; sourceTree = "<group>"; };
 		E18F905B15BFC216004C44C4 /* NSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAppDelegate.h; sourceTree = "<group>"; };
 		E18F905C15BFC216004C44C4 /* NSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAppDelegate.m; sourceTree = "<group>"; };
-		E18F906315BFC2B3004C44C4 /* NVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVObject.h; sourceTree = "<group>"; };
-		E18F906415BFC2B3004C44C4 /* NVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVObject.m; sourceTree = "<group>"; };
-		E18F906615BFC30A004C44C4 /* NVQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVQueue.h; sourceTree = "<group>"; };
-		E18F906715BFC30A004C44C4 /* NVQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVQueue.m; sourceTree = "<group>"; };
+		E1BB68D115C23ADF00EE1DBC /* NVDispatchTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVDispatchTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BB68D715C23ADF00EE1DBC /* NVDispatchTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NVDispatchTest-Info.plist"; sourceTree = "<group>"; };
+		E1BB68D915C23ADF00EE1DBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1BB68DB15C23ADF00EE1DBC /* NVDispatchTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVDispatchTest.h; sourceTree = "<group>"; };
+		E1BB68DC15C23ADF00EE1DBC /* NVDispatchTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVDispatchTest.m; sourceTree = "<group>"; };
+		E1BB68DE15C23ADF00EE1DBC /* NVDispatchTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NVDispatchTest-Prefix.pch"; sourceTree = "<group>"; };
+		E1BB68EF15C25AF000EE1DBC /* NVDispatchTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDispatchTypes.h; sourceTree = "<group>"; };
+		E1BB68FB15C2641A00EE1DBC /* NVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVObject.h; sourceTree = "<group>"; };
+		E1BB68FC15C2641A00EE1DBC /* NVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVObject.m; sourceTree = "<group>"; };
+		E1BB690915C27AE000EE1DBC /* NVTimerSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVTimerSource.h; sourceTree = "<group>"; };
+		E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVTimerSource.m; sourceTree = "<group>"; };
+		E1BB690D15C27B4500EE1DBC /* NVFileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVFileSource.h; sourceTree = "<group>"; };
+		E1BB690E15C27B4600EE1DBC /* NVFileSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVFileSource.m; sourceTree = "<group>"; };
+		E1BB691115C27FBA00EE1DBC /* NVNodeSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVNodeSource.h; sourceTree = "<group>"; };
+		E1BB691215C27FBA00EE1DBC /* NVNodeSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVNodeSource.m; sourceTree = "<group>"; };
+		E1BB691515C2821F00EE1DBC /* NVMachSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVMachSource.h; sourceTree = "<group>"; };
+		E1BB691615C2822000EE1DBC /* NVMachSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVMachSource.m; sourceTree = "<group>"; };
+		E1BB691915C282DB00EE1DBC /* NVProcessSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVProcessSource.h; sourceTree = "<group>"; };
+		E1BB691A15C282DB00EE1DBC /* NVProcessSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVProcessSource.m; sourceTree = "<group>"; };
+		E1BB691D15C282EF00EE1DBC /* NVSignalSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSignalSource.h; sourceTree = "<group>"; };
+		E1BB691E15C282EF00EE1DBC /* NVSignalSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVSignalSource.m; sourceTree = "<group>"; };
+		E1E9321215C23773003E9E62 /* NVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVData.h; sourceTree = "<group>"; };
+		E1E9321315C23773003E9E62 /* NVData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVData.m; sourceTree = "<group>"; };
+		E1E9321415C23773003E9E62 /* NVDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDispatch.h; sourceTree = "<group>"; };
+		E1E9321615C23773003E9E62 /* NVGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGroup.h; sourceTree = "<group>"; };
+		E1E9321715C23773003E9E62 /* NVGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVGroup.m; sourceTree = "<group>"; };
+		E1E9321815C23773003E9E62 /* NVInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVInternal.h; sourceTree = "<group>"; };
+		E1E9321915C23773003E9E62 /* NVInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVInternal.m; sourceTree = "<group>"; };
+		E1E9321A15C23773003E9E62 /* NVIOInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVIOInterface.h; sourceTree = "<group>"; };
+		E1E9321B15C23773003E9E62 /* NVIOInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVIOInterface.m; sourceTree = "<group>"; };
+		E1E9321E15C23773003E9E62 /* NVQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVQueue.h; sourceTree = "<group>"; };
+		E1E9321F15C23773003E9E62 /* NVQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVQueue.m; sourceTree = "<group>"; };
+		E1E9322015C23773003E9E62 /* NVSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSemaphore.h; sourceTree = "<group>"; };
+		E1E9322115C23773003E9E62 /* NVSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVSemaphore.m; sourceTree = "<group>"; };
+		E1E9322215C23773003E9E62 /* NVSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSource.h; sourceTree = "<group>"; };
+		E1E9322315C23773003E9E62 /* NVSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVSource.m; sourceTree = "<group>"; };
+		E1E9322F15C237CC003E9E62 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +110,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1BB68CD15C23ADF00EE1DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BB68D215C23ADF00EE1DBC /* SenTestingKit.framework in Frameworks */,
+				E1BB68D315C23ADF00EE1DBC /* UIKit.framework in Frameworks */,
+				E1BB68D415C23ADF00EE1DBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E18F905215BFC216004C44C4 /* NSDispatch */,
+				E1BB68D515C23ADF00EE1DBC /* NVDispatchTest */,
 				E18F904B15BFC216004C44C4 /* Frameworks */,
 				E18F904915BFC216004C44C4 /* Products */,
 			);
@@ -82,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E18F904815BFC216004C44C4 /* NSDispatch.app */,
+				E1BB68D115C23ADF00EE1DBC /* NVDispatchTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +145,7 @@
 		E18F904B15BFC216004C44C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1E9322F15C237CC003E9E62 /* SenTestingKit.framework */,
 				E18F904C15BFC216004C44C4 /* UIKit.framework */,
 				E18F904E15BFC216004C44C4 /* Foundation.framework */,
 				E18F905015BFC216004C44C4 /* CoreGraphics.framework */,
@@ -99,26 +156,9 @@
 		E18F905215BFC216004C44C4 /* NSDispatch */ = {
 			isa = PBXGroup;
 			children = (
-				E12C1CA615BFEF9C00F6F524 /* NVInternal.h */,
-				E12C1CA715BFEF9C00F6F524 /* NVInternal.m */,
-				E18F906615BFC30A004C44C4 /* NVQueue.h */,
-				E18F906715BFC30A004C44C4 /* NVQueue.m */,
-				E18F906315BFC2B3004C44C4 /* NVObject.h */,
-				E18F906415BFC2B3004C44C4 /* NVObject.m */,
+				E1E9321115C23773003E9E62 /* NVDispatch */,
 				E18F905B15BFC216004C44C4 /* NSAppDelegate.h */,
 				E18F905C15BFC216004C44C4 /* NSAppDelegate.m */,
-				E12C1CA015BFED2D00F6F524 /* NVGroup.h */,
-				E12C1CA115BFED2D00F6F524 /* NVGroup.m */,
-				E12C1CA315BFEF0400F6F524 /* NVDispatch.h */,
-				E12C1CA415BFEF0400F6F524 /* NVDispatch.m */,
-				E12C1CA915BFF21800F6F524 /* NVSemaphore.h */,
-				E12C1CAA15BFF21800F6F524 /* NVSemaphore.m */,
-				E12C1CAC15BFF35A00F6F524 /* NVSource.h */,
-				E12C1CAD15BFF35A00F6F524 /* NVSource.m */,
-				E1333DC615C036030040B624 /* NVData.h */,
-				E1333DC715C036030040B624 /* NVData.m */,
-				E13340F915C03F860040B624 /* NVIOInterface.h */,
-				E13340FA15C03F870040B624 /* NVIOInterface.m */,
 				E18F905315BFC216004C44C4 /* Supporting Files */,
 			);
 			path = NSDispatch;
@@ -133,6 +173,71 @@
 				E18F905A15BFC216004C44C4 /* NSDispatch-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1BB68D515C23ADF00EE1DBC /* NVDispatchTest */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB68DB15C23ADF00EE1DBC /* NVDispatchTest.h */,
+				E1BB68DC15C23ADF00EE1DBC /* NVDispatchTest.m */,
+				E1BB68D615C23ADF00EE1DBC /* Supporting Files */,
+			);
+			path = NVDispatchTest;
+			sourceTree = "<group>";
+		};
+		E1BB68D615C23ADF00EE1DBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB68D715C23ADF00EE1DBC /* NVDispatchTest-Info.plist */,
+				E1BB68D815C23ADF00EE1DBC /* InfoPlist.strings */,
+				E1BB68DE15C23ADF00EE1DBC /* NVDispatchTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1BB692115C2860D00EE1DBC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB690D15C27B4500EE1DBC /* NVFileSource.h */,
+				E1BB690E15C27B4600EE1DBC /* NVFileSource.m */,
+				E1BB691515C2821F00EE1DBC /* NVMachSource.h */,
+				E1BB691615C2822000EE1DBC /* NVMachSource.m */,
+				E1BB691115C27FBA00EE1DBC /* NVNodeSource.h */,
+				E1BB691215C27FBA00EE1DBC /* NVNodeSource.m */,
+				E1BB691915C282DB00EE1DBC /* NVProcessSource.h */,
+				E1BB691A15C282DB00EE1DBC /* NVProcessSource.m */,
+				E1BB691D15C282EF00EE1DBC /* NVSignalSource.h */,
+				E1BB691E15C282EF00EE1DBC /* NVSignalSource.m */,
+				E1E9322215C23773003E9E62 /* NVSource.h */,
+				E1E9322315C23773003E9E62 /* NVSource.m */,
+				E1BB690915C27AE000EE1DBC /* NVTimerSource.h */,
+				E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E1E9321115C23773003E9E62 /* NVDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB692115C2860D00EE1DBC /* Source */,
+				E1E9321215C23773003E9E62 /* NVData.h */,
+				E1E9321315C23773003E9E62 /* NVData.m */,
+				E1E9321415C23773003E9E62 /* NVDispatch.h */,
+				E1BB68EF15C25AF000EE1DBC /* NVDispatchTypes.h */,
+				E1E9321615C23773003E9E62 /* NVGroup.h */,
+				E1E9321715C23773003E9E62 /* NVGroup.m */,
+				E1E9321815C23773003E9E62 /* NVInternal.h */,
+				E1E9321915C23773003E9E62 /* NVInternal.m */,
+				E1E9321A15C23773003E9E62 /* NVIOInterface.h */,
+				E1E9321B15C23773003E9E62 /* NVIOInterface.m */,
+				E1BB68FB15C2641A00EE1DBC /* NVObject.h */,
+				E1BB68FC15C2641A00EE1DBC /* NVObject.m */,
+				E1E9321E15C23773003E9E62 /* NVQueue.h */,
+				E1E9321F15C23773003E9E62 /* NVQueue.m */,
+				E1E9322015C23773003E9E62 /* NVSemaphore.h */,
+				E1E9322115C23773003E9E62 /* NVSemaphore.m */,
+			);
+			path = NVDispatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +259,24 @@
 			productName = NSDispatch;
 			productReference = E18F904815BFC216004C44C4 /* NSDispatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E1BB68D015C23ADF00EE1DBC /* NVDispatchTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1BB68E115C23ADF00EE1DBC /* Build configuration list for PBXNativeTarget "NVDispatchTest" */;
+			buildPhases = (
+				E1BB68CC15C23ADF00EE1DBC /* Sources */,
+				E1BB68CD15C23ADF00EE1DBC /* Frameworks */,
+				E1BB68CE15C23ADF00EE1DBC /* Resources */,
+				E1BB68CF15C23ADF00EE1DBC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVDispatchTest;
+			productName = NVDispatchTest;
+			productReference = E1BB68D115C23ADF00EE1DBC /* NVDispatchTest.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -178,6 +301,7 @@
 			projectRoot = "";
 			targets = (
 				E18F904715BFC216004C44C4 /* NSDispatch */,
+				E1BB68D015C23ADF00EE1DBC /* NVDispatchTest */,
 			);
 		};
 /* End PBXProject section */
@@ -191,7 +315,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1BB68CE15C23ADF00EE1DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BB68DA15C23ADF00EE1DBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1BB68CF15C23ADF00EE1DBC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E18F904415BFC216004C44C4 /* Sources */ = {
@@ -200,15 +348,43 @@
 			files = (
 				E18F905915BFC216004C44C4 /* main.m in Sources */,
 				E18F905D15BFC216004C44C4 /* NSAppDelegate.m in Sources */,
-				E18F906515BFC2B3004C44C4 /* NVObject.m in Sources */,
-				E18F906815BFC30A004C44C4 /* NVQueue.m in Sources */,
-				E12C1CA215BFED2D00F6F524 /* NVGroup.m in Sources */,
-				E12C1CA515BFEF0400F6F524 /* NVDispatch.m in Sources */,
-				E12C1CA815BFEF9C00F6F524 /* NVInternal.m in Sources */,
-				E12C1CAB15BFF21800F6F524 /* NVSemaphore.m in Sources */,
-				E12C1CAE15BFF35A00F6F524 /* NVSource.m in Sources */,
-				E1333DC815C036030040B624 /* NVData.m in Sources */,
-				E13340FB15C03F870040B624 /* NVIOInterface.m in Sources */,
+				E1E9322515C23773003E9E62 /* NVData.m in Sources */,
+				E1E9322715C23773003E9E62 /* NVGroup.m in Sources */,
+				E1E9322815C23773003E9E62 /* NVInternal.m in Sources */,
+				E1E9322915C23773003E9E62 /* NVIOInterface.m in Sources */,
+				E1E9322B15C23773003E9E62 /* NVQueue.m in Sources */,
+				E1E9322C15C23773003E9E62 /* NVSemaphore.m in Sources */,
+				E1E9322D15C23773003E9E62 /* NVSource.m in Sources */,
+				E1BB68FD15C2641A00EE1DBC /* NVObject.m in Sources */,
+				E1BB690B15C27AE100EE1DBC /* NVTimerSource.m in Sources */,
+				E1BB690F15C27B4600EE1DBC /* NVFileSource.m in Sources */,
+				E1BB691315C27FBB00EE1DBC /* NVNodeSource.m in Sources */,
+				E1BB691715C2822100EE1DBC /* NVMachSource.m in Sources */,
+				E1BB691B15C282DC00EE1DBC /* NVProcessSource.m in Sources */,
+				E1BB691F15C282F000EE1DBC /* NVSignalSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BB68CC15C23ADF00EE1DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BB68FE15C26EB500EE1DBC /* NVObject.m in Sources */,
+				E1BB68F215C25E3C00EE1DBC /* NVData.m in Sources */,
+				E1BB68F315C25E3C00EE1DBC /* NVGroup.m in Sources */,
+				E1BB68F415C25E3C00EE1DBC /* NVInternal.m in Sources */,
+				E1BB68F515C25E3C00EE1DBC /* NVIOInterface.m in Sources */,
+				E1BB68F615C25E3C00EE1DBC /* NVQueue.m in Sources */,
+				E1BB68F715C25E3C00EE1DBC /* NVSemaphore.m in Sources */,
+				E1BB68F815C25E3C00EE1DBC /* NVSource.m in Sources */,
+				E1BB68F915C25E3C00EE1DBC /* NSAppDelegate.m in Sources */,
+				E1BB68DD15C23ADF00EE1DBC /* NVDispatchTest.m in Sources */,
+				E1BB690C15C27AE100EE1DBC /* NVTimerSource.m in Sources */,
+				E1BB691015C27B4600EE1DBC /* NVFileSource.m in Sources */,
+				E1BB691415C27FBB00EE1DBC /* NVNodeSource.m in Sources */,
+				E1BB691815C2822100EE1DBC /* NVMachSource.m in Sources */,
+				E1BB691C15C282DC00EE1DBC /* NVProcessSource.m in Sources */,
+				E1BB692015C282F000EE1DBC /* NVSignalSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +395,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				E18F905615BFC216004C44C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1BB68D815C23ADF00EE1DBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BB68D915C23ADF00EE1DBC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -274,6 +458,10 @@
 		E18F906115BFC216004C44C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode45-DP2.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDispatch/NSDispatch-Prefix.pch";
 				INFOPLIST_FILE = "NSDispatch/NSDispatch-Info.plist";
@@ -285,11 +473,45 @@
 		E18F906215BFC216004C44C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode45-DP2.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDispatch/NSDispatch-Prefix.pch";
 				INFOPLIST_FILE = "NSDispatch/NSDispatch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1BB68DF15C23ADF00EE1DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NVDispatchTest/NVDispatchTest-Prefix.pch";
+				INFOPLIST_FILE = "NVDispatchTest/NVDispatchTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E1BB68E015C23ADF00EE1DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NVDispatchTest/NVDispatchTest-Prefix.pch";
+				INFOPLIST_FILE = "NVDispatchTest/NVDispatchTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -313,6 +535,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E1BB68E115C23ADF00EE1DBC /* Build configuration list for PBXNativeTarget "NVDispatchTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BB68DF15C23ADF00EE1DBC /* Debug */,
+				E1BB68E015C23ADF00EE1DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

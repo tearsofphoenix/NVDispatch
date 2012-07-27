@@ -11,7 +11,6 @@
 @interface NVQueue ()
 {
 @private
-    dispatch_queue_t _queue;
     NSString *_label;
 }
 @end
@@ -22,13 +21,13 @@ static NVQueue * __mainQueue = nil;
 
 dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
 {
-    return queue->_queue;
+    return queue->_obj;
 }
 
 + (id)globalQueueWithPriority: (NVQueuePriority)priority
 {
     NVQueue *queue = [[[self class] alloc] init];
-    queue->_queue = dispatch_get_global_queue(priority, 0);
+    queue->_obj = dispatch_get_global_queue(priority, 0);
     return [queue autorelease];
 }
 
@@ -38,7 +37,7 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
     dispatch_once(&onceToken, (^
                                {
                                    __mainQueue = [[[self class] alloc] init];
-                                   __mainQueue->_queue = dispatch_get_main_queue();
+                                   __mainQueue->_obj = dispatch_get_main_queue();
                                }));
     return __mainQueue;
 }
@@ -46,7 +45,7 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
 + (id)currentQueue
 {
     NVQueue *currentQueue = [[[self class] alloc] init];
-    currentQueue->_queue = dispatch_get_current_queue();
+    currentQueue->_obj = dispatch_get_current_queue();
     return [currentQueue autorelease];
 
 }
@@ -69,7 +68,7 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
             attr = DISPATCH_QUEUE_CONCURRENT;
         }
         
-        _queue = dispatch_queue_create([_label UTF8String], attr);
+        _obj = dispatch_queue_create([_label UTF8String], attr);
     }
     return self;
 }
@@ -88,11 +87,11 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
 {
     if (flag)
     {
-        dispatch_sync(_queue, block);
+        dispatch_sync(_obj, block);
         
     }else
     {
-        dispatch_async(_queue, block);
+        dispatch_async(_obj, block);
     }
 }
 
@@ -102,37 +101,37 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
 {
     if (flag)
     {
-        dispatch_sync_f(_queue, context, work);
+        dispatch_sync_f(_obj, context, work);
     }else
     {
-        dispatch_async_f(_queue, context, work);
+        dispatch_async_f(_obj, context, work);
     }
 }
 
 - (void)applyBlock: (NVIterationBlock)block
           forTimes: (size_t)times
 {
-    dispatch_apply(times, _queue, block);
+    dispatch_apply(times, _obj, block);
 }
 
 - (void)applyFunction: (NVIterationFunction)work
               context: (void *)context
              forTimes: (size_t)times
 {
-    dispatch_apply_f(times, _queue, context, work);
+    dispatch_apply_f(times, _obj, context, work);
 }
 
 - (void)dispatchBlock: (NVBlock)block
             afterTime: (dispatch_time_t)time
 {
-    dispatch_after(time, _queue, block);
+    dispatch_after(time, _obj, block);
 }
 
 - (void)dispatchFunction: (NVFunction)work
                  context: (void *)context
                afterTime: (dispatch_time_t)time
 {
-    dispatch_after_f(time, _queue, context, work);
+    dispatch_after_f(time, _obj, context, work);
 }
 
 - (void)dispatchBarrierBlock: (NVBlock)block
@@ -140,11 +139,11 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
 {
     if (flag)
     {
-        dispatch_barrier_sync(_queue, block);
+        dispatch_barrier_sync(_obj, block);
         
     }else
     {
-        dispatch_barrier_async(_queue, block);
+        dispatch_barrier_async(_obj, block);
     }
 }
 
@@ -154,11 +153,11 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
 {
     if (flag)
     {
-        dispatch_barrier_sync_f(_queue, context, work);
+        dispatch_barrier_sync_f(_obj, context, work);
         
     }else
     {
-        dispatch_barrier_async_f(_queue, context, work);
+        dispatch_barrier_async_f(_obj, context, work);
     }
 }
 
@@ -166,24 +165,12 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
             forKey: (const void *)key
         destructor: (NVFunction)destructor
 {
-    dispatch_queue_set_specific(_queue, key, context, destructor);
+    dispatch_queue_set_specific(_obj, key, context, destructor);
 }
 
 - (void *)contextForKey: (const void *)key
 {
-    return dispatch_queue_get_specific(_queue, key);
-}
-
-- (id)retain
-{
-    dispatch_retain(_queue);
-    return [super retain];
-}
-
-- (oneway void)release
-{
-    dispatch_release(_queue);
-    [super release];
+    return dispatch_queue_get_specific(_obj, key);
 }
 
 @end

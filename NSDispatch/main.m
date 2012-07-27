@@ -10,9 +10,12 @@
 
 #import "NSAppDelegate.h"
 
+#import "NVDispatch.h"
+
 int main(int argc, char *argv[])
 {
-    @autoreleasepool {
+    @autoreleasepool
+    {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([NSAppDelegate class]));
     }
 }
