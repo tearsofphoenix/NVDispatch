@@ -134,7 +134,7 @@ double	timer_milePost()
     NVQueue *timerQueue = [[NVQueue alloc] initWithLabel: @"timer queue"
                                                attribute: NVQueueAttributeDefault];
     
-    NVTimerSource *source = [[NVTimerSource alloc] initWithQueue: timerQueue];
+    NVTimer *source = [[NVTimer alloc] initWithQueue: timerQueue];
     
     __block int i = 0;
     

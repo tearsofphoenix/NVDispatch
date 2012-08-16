@@ -42,14 +42,6 @@ dispatch_queue_t _NVQueueGetQueue(NVQueue * queue)
     return __mainQueue;
 }
 
-+ (id)currentQueue
-{
-    NVQueue *currentQueue = [[[self class] alloc] init];
-    currentQueue->_obj = dispatch_get_current_queue();
-    return [currentQueue autorelease];
-
-}
-
 - (id)initWithLabel: (NSString *)label
           attribute: (NVQueueAttribute)attribute
 {

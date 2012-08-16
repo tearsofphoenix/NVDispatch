@@ -22,13 +22,6 @@
     dispatch_source_merge_data(_obj, anotherData);
 }
 
-- (void)scheduleFromTime: (dispatch_time_t)start
-                interval: (uint64_t)interval
-                  leeway: (uint64_t)leeway
-{
-    dispatch_source_set_timer(_obj, start, interval, leeway);
-}
-
 - (NSInteger)testCancel
 {
     return dispatch_source_testcancel(_obj);

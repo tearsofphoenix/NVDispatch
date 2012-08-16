@@ -28,8 +28,8 @@
 		E1BB68F915C25E3C00EE1DBC /* NSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F905C15BFC216004C44C4 /* NSAppDelegate.m */; };
 		E1BB68FD15C2641A00EE1DBC /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB68FC15C2641A00EE1DBC /* NVObject.m */; };
 		E1BB68FE15C26EB500EE1DBC /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB68FC15C2641A00EE1DBC /* NVObject.m */; };
-		E1BB690B15C27AE100EE1DBC /* NVTimerSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */; };
-		E1BB690C15C27AE100EE1DBC /* NVTimerSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */; };
+		E1BB690B15C27AE100EE1DBC /* NVTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690A15C27AE000EE1DBC /* NVTimer.m */; };
+		E1BB690C15C27AE100EE1DBC /* NVTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690A15C27AE000EE1DBC /* NVTimer.m */; };
 		E1BB690F15C27B4600EE1DBC /* NVFileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690E15C27B4600EE1DBC /* NVFileSource.m */; };
 		E1BB691015C27B4600EE1DBC /* NVFileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB690E15C27B4600EE1DBC /* NVFileSource.m */; };
 		E1BB691315C27FBB00EE1DBC /* NVNodeSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB691215C27FBA00EE1DBC /* NVNodeSource.m */; };
@@ -69,8 +69,8 @@
 		E1BB68EF15C25AF000EE1DBC /* NVDispatchTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDispatchTypes.h; sourceTree = "<group>"; };
 		E1BB68FB15C2641A00EE1DBC /* NVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVObject.h; sourceTree = "<group>"; };
 		E1BB68FC15C2641A00EE1DBC /* NVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVObject.m; sourceTree = "<group>"; };
-		E1BB690915C27AE000EE1DBC /* NVTimerSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVTimerSource.h; sourceTree = "<group>"; };
-		E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVTimerSource.m; sourceTree = "<group>"; };
+		E1BB690915C27AE000EE1DBC /* NVTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVTimer.h; sourceTree = "<group>"; };
+		E1BB690A15C27AE000EE1DBC /* NVTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVTimer.m; sourceTree = "<group>"; };
 		E1BB690D15C27B4500EE1DBC /* NVFileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVFileSource.h; sourceTree = "<group>"; };
 		E1BB690E15C27B4600EE1DBC /* NVFileSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVFileSource.m; sourceTree = "<group>"; };
 		E1BB691115C27FBA00EE1DBC /* NVNodeSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVNodeSource.h; sourceTree = "<group>"; };
@@ -210,8 +210,8 @@
 				E1BB691E15C282EF00EE1DBC /* NVSignalSource.m */,
 				E1E9322215C23773003E9E62 /* NVSource.h */,
 				E1E9322315C23773003E9E62 /* NVSource.m */,
-				E1BB690915C27AE000EE1DBC /* NVTimerSource.h */,
-				E1BB690A15C27AE000EE1DBC /* NVTimerSource.m */,
+				E1BB690915C27AE000EE1DBC /* NVTimer.h */,
+				E1BB690A15C27AE000EE1DBC /* NVTimer.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 				E1E9322C15C23773003E9E62 /* NVSemaphore.m in Sources */,
 				E1E9322D15C23773003E9E62 /* NVSource.m in Sources */,
 				E1BB68FD15C2641A00EE1DBC /* NVObject.m in Sources */,
-				E1BB690B15C27AE100EE1DBC /* NVTimerSource.m in Sources */,
+				E1BB690B15C27AE100EE1DBC /* NVTimer.m in Sources */,
 				E1BB690F15C27B4600EE1DBC /* NVFileSource.m in Sources */,
 				E1BB691315C27FBB00EE1DBC /* NVNodeSource.m in Sources */,
 				E1BB691715C2822100EE1DBC /* NVMachSource.m in Sources */,
@@ -379,7 +379,7 @@
 				E1BB68F815C25E3C00EE1DBC /* NVSource.m in Sources */,
 				E1BB68F915C25E3C00EE1DBC /* NSAppDelegate.m in Sources */,
 				E1BB68DD15C23ADF00EE1DBC /* NVDispatchTest.m in Sources */,
-				E1BB690C15C27AE100EE1DBC /* NVTimerSource.m in Sources */,
+				E1BB690C15C27AE100EE1DBC /* NVTimer.m in Sources */,
 				E1BB691015C27B4600EE1DBC /* NVFileSource.m in Sources */,
 				E1BB691415C27FBB00EE1DBC /* NVNodeSource.m in Sources */,
 				E1BB691815C2822100EE1DBC /* NVMachSource.m in Sources */,
@@ -458,13 +458,11 @@
 		E18F906115BFC216004C44C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode45-DP2.app/Contents/Developer/Library/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDispatch/NSDispatch-Prefix.pch";
 				INFOPLIST_FILE = "NSDispatch/NSDispatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,13 +471,11 @@
 		E18F906215BFC216004C44C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode45-DP2.app/Contents/Developer/Library/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDispatch/NSDispatch-Prefix.pch";
 				INFOPLIST_FILE = "NSDispatch/NSDispatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -543,6 +539,7 @@
 				E1BB68E015C23ADF00EE1DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

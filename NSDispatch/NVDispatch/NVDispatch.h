@@ -19,4 +19,4 @@
 #import "NVNodeSource.h"
 #import "NVProcessSource.h"
 #import "NVSignalSource.h"
-#import "NVTimerSource.h"
+#import "NVTimer.h"

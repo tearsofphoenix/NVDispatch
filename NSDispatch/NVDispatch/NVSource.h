@@ -29,10 +29,6 @@ typedef NSUInteger NVSourceType;
 
 @interface NVSource : NVObject
 
-- (void)scheduleFromTime: (dispatch_time_t)start
-                interval: (uint64_t)interval
-                  leeway: (uint64_t)leeway;
-
 - (void)cancel;
 
 - (NSInteger)testCancel;

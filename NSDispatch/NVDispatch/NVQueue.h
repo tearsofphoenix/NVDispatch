@@ -35,8 +35,6 @@ typedef NSUInteger NVQueueAttribute;
 
 + (id)mainQueue;
 
-+ (id)currentQueue;
-
 - (id)initWithLabel: (NSString *)label
           attribute: (NVQueueAttribute)attr;
 
