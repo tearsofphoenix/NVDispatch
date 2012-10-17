@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NVDispatch.h"
+#import "NVObject.h"
 
 @class NVQueue;
 
@@ -27,26 +27,13 @@ enum
 
 typedef NSUInteger NVSourceType;
 
-@interface NVSource : NSObject
-
-- (id)initWithSourceType: (NVSourceType)type
-                   queue: (NVQueue *)queue;
-
-- (void)setStartTime: (dispatch_time_t)start
-            interval: (uint64_t)interval
-              leeway: (uint64_t)leeway;
+@interface NVSource : NVObject
 
 - (void)cancel;
 
-- (NSUInteger)data;
-
-- (uintptr_t)handle;
-
-- (NSUInteger)mask;
+- (NSInteger)testCancel;
 
 - (void)mergeData: (NSUInteger)anotherData;
-
-- (NSInteger)testCancel;
 
 @end
 

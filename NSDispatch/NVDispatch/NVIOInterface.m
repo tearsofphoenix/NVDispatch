@@ -25,13 +25,6 @@ enum
 
 typedef NSUInteger NVIOChannelConfiguration;
 
-@interface NVIOInterface ()
-{
-@private
-    dispatch_io_t _rawIO;
-}
-@end
-
 @implementation NVIOInterface
 
 - (void)dealloc
@@ -47,7 +40,7 @@ typedef NSUInteger NVIOChannelConfiguration;
 {
     if ((self = [super init]))
     {
-        _rawIO = dispatch_io_create(type, 0, _NVQueueGetQueue(queue), handler);
+        _obj = dispatch_io_create(type, 0, _NVQueueGetQueue(queue), handler);
     }
     return self;
 }
@@ -61,7 +54,7 @@ typedef NSUInteger NVIOChannelConfiguration;
 {
     if ((self = [super init]))
     {
-        _rawIO = dispatch_io_create_with_path(type, [path UTF8String], flag, mode, _NVQueueGetQueue(queue), handler);
+        _obj = dispatch_io_create_with_path(type, [path UTF8String], flag, mode, _NVQueueGetQueue(queue), handler);
     }
     return self;
 }
@@ -70,7 +63,7 @@ typedef NSUInteger NVIOChannelConfiguration;
           onQueue: (NVQueue *)queue
         withBlock: (dispatch_io_handler_t)block
 {
-    dispatch_io_read(_rawIO, range.location, range.length, _NVQueueGetQueue(queue), block);
+    dispatch_io_read(_obj, range.location, range.length, _NVQueueGetQueue(queue), block);
 }
 
 - (void)writeData: (NVData *)data
@@ -78,40 +71,27 @@ typedef NSUInteger NVIOChannelConfiguration;
           onQueue: (NVQueue *)queue
         withBlock: (dispatch_io_handler_t)block
 {
-    dispatch_io_write(_rawIO, offset, _NVDataGetData(data), _NVQueueGetQueue(queue), block);
+    dispatch_io_write(_obj, offset, _NVDataGetData(data), _NVQueueGetQueue(queue), block);
 }
 
 - (void)close
 {
-    dispatch_io_close(_rawIO, NVIOCloseFlagStop);
+    dispatch_io_close(_obj, NVIOCloseFlagStop);
 }
 
 - (void)setHighWater: (NSUInteger)hightWater
 {
-    dispatch_io_set_high_water(_rawIO, hightWater);
+    dispatch_io_set_high_water(_obj, hightWater);
 }
 
 - (void)setLowWater: (NSUInteger)lowWater
 {
-    dispatch_io_set_low_water(_rawIO, lowWater);
+    dispatch_io_set_low_water(_obj, lowWater);
 }
 
 - (void)setInterval: (NSUInteger)interval
 {
-    dispatch_io_set_interval(_rawIO, interval, NVIOChannelConfigurationStrictInterval);
-}
-
-
-- (id)retain
-{
-    dispatch_retain(_rawIO);
-    return [super retain];
-}
-
-- (oneway void)release
-{
-    dispatch_release(_rawIO);
-    [super release];
+    dispatch_io_set_interval(_obj, interval, NVIOChannelConfigurationStrictInterval);
 }
 
 @end

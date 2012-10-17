@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <dispatch/data.h>
-#import "NVDispatch.h"
+#import "NVObject.h"
 
 @class NVQueue;
 
-@interface NVData : NSObject
+@interface NVData : NVObject
 
 - (NSUInteger)size;
 

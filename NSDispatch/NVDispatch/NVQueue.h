@@ -9,15 +9,31 @@
 #import <Foundation/Foundation.h>
 #import <dispatch/queue.h>
 
-#import "NVDispatch.h"
+#import "NVObject.h"
 
-@interface NVQueue : NSObject
+enum
+{
+    NVQueuePriorityDefault = DISPATCH_QUEUE_PRIORITY_DEFAULT,
+    NVQueuePriorityHigh = DISPATCH_QUEUE_PRIORITY_HIGH,
+    NVQueuePriorityLow = DISPATCH_QUEUE_PRIORITY_LOW,
+    NVQueuePriorityBackground = DISPATCH_QUEUE_PRIORITY_BACKGROUND,
+};
+
+enum
+{
+    NVQueueAttributeSerial,
+    NVQueueAttributeConcurrent,
+    NVQueueAttributeDefault = NVQueueAttributeSerial,
+};
+
+typedef NSUInteger NVQueueAttribute;
+
+
+@interface NVQueue : NVObject
 
 + (id)globalQueueWithPriority: (NVQueuePriority)priority;
 
 + (id)mainQueue;
-
-+ (id)currentQueue;
 
 - (id)initWithLabel: (NSString *)label
           attribute: (NVQueueAttribute)attr;
@@ -65,6 +81,6 @@
             forKey: (const void *)key
         destructor: (NVFunction)destructor;
 
-- (void*)contextForKey: (const void*)key;
+- (void *)contextForKey: (const void *)key;
 
 @end
